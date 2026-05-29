@@ -1,0 +1,94 @@
+/* src/styles/variables.css */
+
+:root {
+  /* Fonts */
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  /* HSL Colors */
+  /* Brand Primary: Indigo / Violet */
+  --primary-h: 250;
+  --primary-s: 84%;
+  --primary-l: 54%;
+  --primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
+  --primary-hover: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) - 6%));
+  --primary-light: hsl(var(--primary-h), 100%, 96.5%);
+  --primary-glow: rgba(99, 102, 241, 0.15);
+
+  /* Canvas / Surface / Neutrals */
+  --background: hsl(210, 40%, 98%); /* Soft gray background canvas */
+  --surface: hsl(0, 0%, 100%);     /* Pure white cards */
+  --surface-hover: hsl(210, 40%, 96.5%);
+  --border: hsl(214, 32%, 91%);
+  --border-hover: hsl(214, 20%, 80%);
+  --border-focus: var(--primary);
+
+  /* Text colors */
+  --text-primary: hsl(222, 47%, 11%);    /* Deep rich slate */
+  --text-secondary: hsl(215, 16%, 47%);  /* Mid cool-gray for descriptions */
+  --text-muted: hsl(215, 20%, 65%);     /* Pale gray for captions */
+  --text-light: hsl(0, 0%, 100%);        /* White for dark buttons */
+
+  /* System State Indicators */
+  /* Pending - Slate / Amber */
+  --warning-h: 45;
+  --warning-s: 93%;
+  --warning-l: 47%;
+  --warning: hsl(var(--warning-h), var(--warning-s), var(--warning-l));
+  --warning-light: hsl(var(--warning-h), 100%, 96%);
+
+  /* In Progress - Electric Blue */
+  --info-h: 199;
+  --info-s: 89%;
+  --info-l: 48%;
+  --info: hsl(var(--info-h), var(--info-s), var(--info-l));
+  --info-light: hsl(var(--info-h), 100%, 96%);
+
+  /* Completed - Emerald Green */
+  --success-h: 142;
+  --success-s: 72%;
+  --success-l: 29%;
+  --success: hsl(var(--success-h), var(--success-s), var(--success-l));
+  --success-light: hsl(var(--success-h), 85%, 96%);
+
+  /* High Priority / Warning - Rose Crimson */
+  --danger-h: 346;
+  --danger-s: 84%;
+  --danger-l: 61%;
+  --danger: hsl(var(--danger-h), var(--danger-s), var(--danger-l));
+  --danger-light: hsl(var(--danger-h), 100%, 96%);
+  --danger-hover: hsl(var(--danger-h), var(--danger-s), calc(var(--danger-l) - 8%));
+
+  /* Priority Visual Mappings */
+  --priority-low: hsl(215, 16%, 47%);
+  --priority-low-bg: hsl(210, 40%, 96%);
+  
+  --priority-medium: hsl(25, 95%, 53%);
+  --priority-medium-bg: hsl(33, 100%, 96%);
+  
+  --priority-high: hsl(346, 84%, 61%);
+  --priority-high-bg: hsl(351, 100%, 96%);
+
+  /* Shadows (Soft multi-layered design) */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -2px rgba(0, 0, 0, 0.01);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+  --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+
+  /* Border Radii */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-all: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  
+  /* Heights / Widths Layout */
+  --sidebar-width: 260px;
+  --sidebar-collapsed-width: 80px;
+  --topbar-height: 72px;
+}

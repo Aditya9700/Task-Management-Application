@@ -2,7 +2,7 @@
 
 A full-stack Task Management Application built with React, Node.js, Express, MongoDB, and JWT Authentication.
 
-Live Project Link : https://task-management-application-eojzwmewd.vercel.app/login
+Live Project Link : https://task-management-application-eojzwmewd.vercel.app
 ## Features
 
 * User Registration & Login
